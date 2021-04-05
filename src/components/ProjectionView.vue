@@ -9,58 +9,62 @@
 
     <div id="UCBoard" style="">
 
-      <div style="position: absolute; top: 0px; left: 0px; width: 50px; height: 50px; border-left: 10px solid white; border-top: 10px solid white; box-sizing: border-box;"></div>
-      <div style="position: absolute; top: 0px; left: 370px; width: 50px; height: 50px; border-right: 10px solid white; border-top: 10px solid white; box-sizing: border-box;"></div>
-      <div style="position: absolute; top: 430px; left: 0px; width: 50px; height: 50px; border-left: 10px solid white; border-bottom: 10px solid white; box-sizing: border-box;"></div>
-      <div style="position: absolute; top: 430px; left: 370px; width: 50px; height: 50px; border-right: 10px solid white; border-bottom: 10px solid white; box-sizing: border-box;"></div>
+      <div
+          style="position: absolute; top: 0px; left: 0px; width: 50px; height: 50px; border-left: 10px solid white; border-top: 10px solid white; box-sizing: border-box;"></div>
+      <div
+          style="position: absolute; top: 0px; left: 370px; width: 50px; height: 50px; border-right: 10px solid white; border-top: 10px solid white; box-sizing: border-box;"></div>
+      <div
+          style="position: absolute; top: 430px; left: 0px; width: 50px; height: 50px; border-left: 10px solid white; border-bottom: 10px solid white; box-sizing: border-box;"></div>
+      <div
+          style="position: absolute; top: 430px; left: 370px; width: 50px; height: 50px; border-right: 10px solid white; border-bottom: 10px solid white; box-sizing: border-box;"></div>
 
       <div id="powerSupply" style="">
-        <div id="PWR" class="input"></div>
-        <div id="GND" class="input"></div>
+        <div id="PWR" class="input" v-bind:class="[getSteps[getCurrentStep].inputs.includes('PWR') ? 'active' : '']"/>
+        <div id="GND" class="input" v-bind:class="[getSteps[getCurrentStep].inputs.includes('GND') ? 'active' : '']"/>
       </div>
 
       <div id="inputsContainer" style="">
 
-        <div id="i0" class="input active row1 col1"></div>
-        <div id="i4" class="input row1 col2"></div>
-        <div id="o0" class="input row1 col3"></div>
-        <div id="o4" class="input row1 col4"></div>
-        <div id="" class="input row1 col5"></div>
-        <div id="" class="input row1 col6"></div>
+        <div id="i0" class="input row1 col1" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i0') ? 'active' : '']"/>
+        <div id="i4" class="input row1 col2" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i4') ? 'active' : '']"/>
+        <div id="o0" class="input row1 col3" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o0') ? 'active' : '']"/>
+        <div id="o4" class="input row1 col4" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o4') ? 'active' : '']"/>
+        <div id="" class="input row1 col5" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+        <div id="" class="input row1 col6" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
 
-        <div id="i1" class="input row2 col1"></div>
-        <div id="i5" class="input active row2 col2"></div>
-        <div id="o1" class="input row2 col3"></div>
-        <div id="o5" class="input row2 col4"></div>
-        <div id="" class="input row2 col5"></div>
-        <div id="" class="input row2 col6"></div>
+        <div id="i1" class="input row2 col1" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i1') ? 'active' : '']"/>
+        <div id="i5" class="input row2 col2" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i5') ? 'active' : '']"/>
+        <div id="o1" class="input row2 col3" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o1') ? 'active' : '']"/>
+        <div id="o5" class="input row2 col4" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o5') ? 'active' : '']"/>
+        <div id="" class="input row2 col5" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+        <div id="" class="input row2 col6" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
 
-        <div id="i2" class="input row3 col1"></div>
-        <div id="i6" class="input row3 col2"></div>
-        <div id="o2" class="input row3 col3"></div>
-        <div id="o6" class="input row3 col4"></div>
-        <div id="" class="input row3 col5"></div>
-        <div id="" class="input row3 col6"></div>
+        <div id="i2" class="input row3 col1" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i2') ? 'active' : '']"/>
+        <div id="i6" class="input row3 col2" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i6') ? 'active' : '']"/>
+        <div id="o2" class="input row3 col3" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o2') ? 'active' : '']"/>
+        <div id="o6" class="input row3 col4" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o6') ? 'active' : '']"/>
+        <div id="" class="input row3 col5" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+        <div id="" class="input row3 col6" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
 
-        <div id="i3" class="input row4 col1"></div>
-        <div id="i7" class="input row4 col2"></div>
-        <div id="o3" class="input row4 col3"></div>
-        <div id="o7" class="input row4 col4"></div>
-        <div id="" class="input row4 col5"></div>
-        <div id="" class="input row4 col6"></div>
+        <div id="i3" class="input row4 col1" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i3') ? 'active' : '']"/>
+        <div id="i7" class="input row4 col2" v-bind:class="[getSteps[getCurrentStep].inputs.includes('i7') ? 'active' : '']"/>
+        <div id="o3" class="input row4 col3" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o3') ? 'active' : '']"/>
+        <div id="o7" class="input row4 col4" v-bind:class="[getSteps[getCurrentStep].inputs.includes('o7') ? 'active' : '']"/>
+        <div id="" class="input row4 col5" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+        <div id="" class="input row4 col6" v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
 
       </div>
 
       <div id="onBoardText" style="">
-        <p>Please connect the blue cable to the highlighted input</p>
+<!--        <p>Please connect the blue cable to the highlighted input</p>-->
       </div>
 
     </div>
 
     <div id="worktopText" style="">
       <br><br><br><br><br><br>
-      <h1>Please connect the blue cable to the highlighted input</h1>
-      <p>Below goes the Store Variable: <br>{{getTestVar}}</p>
+      <h1>{{ getSteps[getCurrentStep].msg }}</h1>
+      <p>current step: {{ getCurrentStep }}</p>
     </div>
 
   </div>
@@ -84,12 +88,15 @@ export default {
   },
   computed: {
     ...mapGetters([
-      'getTestVar'
+      'getTestVar',
+      'getCurrentStep',
+      'getSteps'
     ]),
   },
   methods: {
     ...mapActions([
       'setTestVar',
+      'setCurrentStep',
     ]),
     myOwnAction() {
       this.setTestVar('changed now');
@@ -148,14 +155,15 @@ export default {
   top: 200px;
 }
 
-#PWR{
+#PWR {
   top: 5px;
-  left:15px;
+  left: 15px;
   background-color: lightcoral;
 }
-#GND{
+
+#GND {
   top: 50px;
-  left:15px;
+  left: 15px;
   background-color: lightskyblue;
 }
 
@@ -169,43 +177,48 @@ export default {
 }
 
 
-
-
-
-
-.row1{
+.row1 {
   top: 0px;
 }
-.row2{
+
+.row2 {
   top: 40px;
 }
-.row3{
+
+.row3 {
   top: 80px;
 }
-.row4{
+
+.row4 {
   top: 120px;
 }
 
-.col1{
+.col1 {
   left: 0px;
 }
-.col2{
+
+.col2 {
   left: 30px;
 }
-.col3{
+
+.col3 {
   left: 60px;
 }
-.col4{
+
+.col4 {
   left: 90px;
 }
-.col5{
+
+.col5 {
   left: 120px;
 }
-.col6{
+
+.col6 {
   left: 150px;
 }
-.active{
-  background-color: white;
+
+.active {
+  background-color: white!important;
 }
 
 </style>

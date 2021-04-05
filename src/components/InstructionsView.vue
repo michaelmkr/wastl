@@ -1,10 +1,13 @@
 <template>
   <div>
     <h1>Instructions View</h1>
-    <p>this is a test</p>
-    <p>instructions view</p>
-        <p>Here goes the Store Variable: <br>{{getTestVar}}</p>
-    <button @click="myOwnAction">set new testVar</button>
+        <p>Current step: <br>{{getCurrentStep}}</p>
+        <p>Current message: <br>{{getSteps[getCurrentStep].msg}}</p>
+        <p>Current inputs: <br>{{getSteps[getCurrentStep].inputs}}</p>
+    <button @click="lastStep">previous step</button>
+    <button @click="nextStep">next step</button>
+    <br><br>
+    <img :src="getSteps[getCurrentStep].img" style="width:50%;">
     <br><br>
     <router-link to="/projection">
       <button>Go to Projection</button>
@@ -19,21 +22,28 @@ export default {
   name: "InstructionsView",
   data() {
     return {
-      test: 1,
     }
+  },
+  beforeCreate: function () {
+    document.body.style.backgroundColor = 'white';
   },
   computed: {
     ...mapGetters([
-      'getTestVar'
+      'getTestVar',
+      'getCurrentStep',
+      'getSteps'
     ]),
   },
   methods: {
     ...mapActions([
       'setTestVar',
+      'setCurrentStep',
     ]),
-    myOwnAction() {
-      this.setTestVar('changed now');
-      console.log("test log to console");
+    nextStep() {
+      this.setCurrentStep(this.getCurrentStep + 1);
+    },
+    lastStep() {
+      this.setCurrentStep(this.getCurrentStep - 1);
     }
   }
 }
