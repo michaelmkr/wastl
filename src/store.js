@@ -60,7 +60,7 @@ export default new Vuex.Store({
                 img: "/img/steckbrett_details.jpg"
             },
             {
-                msg: "Am Tec2Screen System sehen Sie die jeweiligen Ausgänge.",
+                msg: "Am Tec2Screen System (iPad mit Anschlüssen) sehen Sie die jeweiligen Ausgänge.",
                 detail: "Die Ausgangslinien Schalters und des Schiebereglers zeigen mit welchem Ausgang diese verbunden sind.",
                 inputs: ["t6", "t8"],
                 img: "/img/tec2screen_details.jpg"
@@ -78,13 +78,13 @@ export default new Vuex.Store({
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das rote Kabel mit dem 24V Anschluss des Steckbretts.",
+                msg: "Verbinden Sie das rote Kabel der Stromversorgung mit dem 24V Anschluss des Steckbretts.",
                 detail: "Die Stromzufuhr für das Steckbrett kommt vom Tec2Screen System.",
                 inputs: ["PWR"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das schwarze Kabel mit der Masse des Steckbretts.",
+                msg: "Verbinden Sie das schwarze Kabel der Stromversorgung mit der Masse des Steckbretts.",
                 detail: "Die Stromzufuhr für das Steckbrett kommt vom Tec2Screen System.",
                 inputs: ["GND"],
                 img: "null"
@@ -96,33 +96,32 @@ export default new Vuex.Store({
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das schwarze Kabel der Ampel mit der Masse.",
+                msg: "Verbinden Sie das schwarze Kabel der Ampel mit der Masse (0V) des Steckbretts.",
                 detail: "",
                 inputs: ["GND"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das rote Kabel der Ampel mit Plus.",
+                msg: "Verbinden Sie das rote Kabel der Ampel mit Plus (+24V).",
                 detail: "Nach dem Verbinden sollte das rote Licht der Ampel leuchten. Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
                 inputs: ["PWR"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das gelbe Kabel der Ampel mit Plus.",
+                msg: "Verbinden Sie das gelbe Kabel der Ampel mit Plus (+24V).",
                 detail: "Nach dem Verbinden sollte das gelbe Licht der Ampel leuchten. Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
                 inputs: ["PWR"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das grüne Kabel der Ampel mit Plus.",
-                detail: "Nach dem Verbinden sollte das grüne Licht der Ampel leuchten." +
-                    "Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
+                msg: "Verbinden Sie das grüne Kabel der Ampel mit Plus (+24V).",
+                detail: "Nach dem Verbinden sollte das grüne Licht der Ampel leuchten. Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
                 inputs: ["PWR"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie mit dem gelben Kabel den Input 3 des Steckbrett und den Output des Schalters im Tec2Screen System.",
-                detail: "Beachten Sie, dass das Tec2Screen System Ihnen zeigt welcher Ausgang der richtige ist.",
+                msg: "Verbinden Sie mit dem gelben Kabel den Eingang 3 des Steckbretts und den Ausgang des Schalters im Tec2Screen System.",
+                detail: "Beachten Sie, dass das Tec2Screen System Ihnen zeigt welcher Ausgang der Richtige ist.",
                 inputs: ["i3", "t6"],
                 img: "null"
             },
@@ -148,13 +147,13 @@ export default new Vuex.Store({
                 msg: "Verbinden Sie nun G+ der Glühbirne mit dem 24V Anschluss des Steckbretts.",
                 detail: "",
                 inputs: ["g+", "PWR"],
-                img: "null"
+                img: ""
             },
             {
                 msg: "Verbinden Sie nun die Masse der Glühbirne mit der Masse des Steckbretts.",
                 detail: "Die Glühbirne sollte nun leuchten.",
                 inputs: ["g-", "GND"],
-                img: "null"
+                img: ""
             },
             {
                 msg: "Stecken Sie nun wieder alle Kabel der Glühbirne ab.",
@@ -167,19 +166,19 @@ export default new Vuex.Store({
                 msg: "Aufgabe 2: Dimmen der Glühbirne.",
                 detail: "In dieser Aufgabe lernen wir, wie wir die Glühbirne dimmen können.",
                 inputs: ["", ""],
-                img: "null"
+                img: "/img/gluhbirne_details.jpg"
             },
             {
-                msg: "Verbinden Sie nun den G+ der Glühbirne mit Output 7.",
+                msg: "Verbinden Sie nun G+ der Glühbirne mit Output 7.",
                 detail: "",
                 inputs: ["g+", "o7"],
-                img: "null"
+                img: "/img/gluhbirne_details.jpg"
             },
             {
                 msg: "Verbinden Sie den nun die Masse der Glühbirne mit der Masse des Steckbretts.",
                 detail: "",
                 inputs: ["g-", "GND"],
-                img: "null"
+                img: "/img/gluhbirne_details.jpg"
             },
             {
                 msg: "Der Schieberegler sollte nun Glühbirne dimmen können",
