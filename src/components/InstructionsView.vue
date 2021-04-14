@@ -10,11 +10,6 @@
     </div>
     <button class="mdc-button mdc-button--raised button" style="left: 10px;" @click="lastStep">zurück</button>
     <button class="mdc-button mdc-button--raised button" style="right: 10px;" @click="nextStep">weiter</button>
-    <br><br>
-    <br><br>
-    <router-link to="/projection">
-      <button>Go to Projection</button>
-    </router-link>
   </div>
 </template>
 
