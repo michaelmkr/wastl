@@ -121,7 +121,7 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie mit dem gelben Kabel den Input 3 des UCB und den Output des Schalters im Tec2Screen System.",
+                msg: "Verbinden Sie mit dem gelben Kabel den Input 3 des Steckbrett und den Output des Schalters im Tec2Screen System.",
                 detail: "Beachten Sie, dass das Tec2Screen System Ihnen zeigt welcher Ausgang der richtige ist.",
                 inputs: ["i3", "t6"],
                 img: '/img/'
@@ -158,7 +158,7 @@ export default new Vuex.Store({
             },
             {
                 msg: "Stecken Sie nun wieder alle Kabel der Glühbirne ab.",
-                detail: "Stecken Sie die Kabel sowohl von der Glühbirne als auch vom Steckbrett ab und legen Sie diese zurück." +
+                detail: "Stecken Sie die Kabel sowohl von der Glühbirne als auch vom Steckbrett ab und legen Sie diese zurück. " +
                     "Danach geht es weiter mit der nächsten Übung.",
                 inputs: ["", ""],
                 img: '/img/'

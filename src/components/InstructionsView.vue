@@ -62,11 +62,19 @@ export default {
 
 .button {
   width: 200px;
-  height: 100%;
+  height: 95%;
   position: absolute;
   top: 10px;
   bottom: 10px;
   background-color: #236B8E !important;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h3{
+  font-size: 2em;
 }
 
 </style>
