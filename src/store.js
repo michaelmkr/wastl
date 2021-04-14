@@ -31,7 +31,7 @@ export default new Vuex.Store({
             },
             {
                 msg: "Die Verbindung der Stromquelle befindet sich links auf dem Steckbrett.",
-                detail: "",
+                detail: "Die Kabel dazu liegen links vom Steckbrett.",
                 inputs: ["PWR", "GND"],
                 img: '/img/'
             },
@@ -55,12 +55,12 @@ export default new Vuex.Store({
             },
             {
                 msg: "Am Tec2Screen System sehen Sie die jeweiligen Ausgänge.",
-                detail: "Die Ausgangslinien Schalters und des Schiebereglers zeigen Ihnen welcher Ausgang mit ihnen verbunden ist.",
+                detail: "Die Ausgangslinien Schalters und des Schiebereglers zeigen mit welchem Ausgang diese verbunden sind.",
                 inputs: ["t6", "t8"],
                 img: '/img/'
             },
             {
-                msg: "Die Glühbirne besitzt eine Stromversorgung (G+ und -), sowie einen Helligkeitssensor (S+ und T).",
+                msg: "Die Glühbirne besitzt eine Stromversorgung (- und G+), sowie einen Helligkeitssensor (S+ und T).",
                 detail: "S+ ist hierbei die Stromversorgung des Sensors und T der Ausgang über den Sie den Wert auslesen können.",
                 inputs: ["g+", "g-", "s+", "st"],
                 img: '/img/'
@@ -85,7 +85,7 @@ export default new Vuex.Store({
             },
             {
                 msg: "Verbinden Sie das selbe schwarze Kabel auch mit der Masse des Tec2Screen Systems.",
-                detail: "",
+                detail: "Auf dem Controllino sollten nun 2 Lampen leuchten.",
                 inputs: ["tGND"],
                 img: '/img/'
             },
@@ -145,7 +145,7 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie nun - der Glühbirne mit der Masse des Steckbretts.",
+                msg: "Verbinden Sie nun die Masse der Glühbirne mit der Masse des Steckbretts.",
                 detail: "Die Glühbirne sollte nun leuchten.",
                 inputs: ["g-", "GND"],
                 img: '/img/'
