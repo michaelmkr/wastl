@@ -264,7 +264,7 @@ export default {
   position: absolute;
   left: 990px;
   top: 558px;
-  border: 20px solid white;
+  border: 20px solid black;
 }
 
 #PWR {
