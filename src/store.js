@@ -181,8 +181,8 @@ export default new Vuex.Store({
                 img: "/img/gluhbirne_details.jpg"
             },
             {
-                msg: "Der Schieberegler sollte nun Glühbirne dimmen können",
-                detail: "Verstellen Sie den Schieberegler des Tec2Screen Systems um das zu testen.",
+                msg: "Der Schieberegler sollte die Glühbirne nun dimmen können",
+                detail: "Verstellen Sie den Schieberegler des Tec2Screen Systems um das zu testen. Wenn das Dimmen funktioniert stellen Sie den Schieberegler wieder auf Null.",
                 inputs: ["xx"],
                 img: "null"
             },
@@ -211,7 +211,7 @@ export default new Vuex.Store({
                 img: "null"
             },
             {
-                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne mit der Power des Steckbretts.",
+                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne mit der Stromversorgung des Steckbretts.",
                 detail: "In diesem Schritt verbinden wir die Stromversorgung des Helligkeitssensors mit der des Steckbretts.",
                 inputs: ["s+", "PWR"],
                 img: "null"
