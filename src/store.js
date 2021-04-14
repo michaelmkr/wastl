@@ -24,6 +24,12 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
+                msg: "Hinweis",
+                detail: "Bitte stellen Sie zu jedem Zeitpunkt sicher, dass die Ausrichtung der Komponenten mit den projizierten Kanten übereinstimmt.",
+                inputs: [""],
+                img: '/img/'
+            },
+            {
                 msg: "Rechts von Ihrem Arbeitsplatz befinden sich alle Kabel die Sie benötigen.",
                 detail: "",
                 inputs: [""],
