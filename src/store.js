@@ -110,7 +110,7 @@ export default new Vuex.Store({
             {
                 msg: "Verbinden Sie das grüne Kabel der Ampel mit Plus.",
                 detail: "Nach dem Verbinden sollte das grüne Licht der Ampel leuchten." +
-                    "Ist dies der Fall, ziehen Sie das Kabel wieder ab. Ziehen Sie diesmal auch das schwarze Kabel der Ampel ab.",
+                    "Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
                 inputs: ["PWR"],
                 img: '/img/'
             },
@@ -164,7 +164,7 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie den nun G+ der Glühbirne mit Output 7.",
+                msg: "Verbinden Sie nun den G+ der Glühbirne mit Output 7.",
                 detail: "",
                 inputs: ["g+", "o7"],
                 img: '/img/'
@@ -172,78 +172,54 @@ export default new Vuex.Store({
             {
                 msg: "Verbinden Sie den nun die Masse der Glühbirne mit der Masse des Steckbretts.",
                 detail: "",
-                inputs: ["g+", "o7"],
+                inputs: ["g-", "GND"],
                 img: '/img/'
             },
             {
-                msg: "Schieberegler sollte nun Glühbirne dimmen können",
-                detail: "",
+                msg: "Der Schieberegler sollte nun Glühbirne dimmen können",
+                detail: "Verstellen Sie den Schieberegler des Tec2Screen Systems um das zu testen.",
                 inputs: ["xx"],
                 img: '/img/'
             },
             {
-                msg: "Ampel Masse abstecken, Glühbirn Masse verbinden, Ampel Masse wieder darauf stecken",
-                detail: "",
-                inputs: ["GND", "g-"],
+                msg: "Aufgabe 3: Ampelsteuerung",
+                detail: "In dieser Aufgabe lernen wir, wie wir die Ampel über die Helligkeit der Glühbirne steuern können.",
+                inputs: ["", ""],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie das rote Licht der Ampel mit Output 2",
+                msg: "Verbinden Sie das rote Licht der Ampel mit Ausgang 2",
                 detail: "",
                 inputs: ["o2"],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie Sie das gelbe Licht der  Ampel mit Output 6",
+                msg: "Verbinden Sie Sie das gelbe Licht der  Ampel mit Ausgang 6",
                 detail: "",
                 inputs: ["o6"],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie Sie das grüne Licht der  Ampel mit Output 0",
+                msg: "Verbinden Sie Sie das grüne Licht der  Ampel mit Ausgang 0",
                 detail: "",
                 inputs: ["o0"],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne (S+) mit der Power des UCB.",
-                detail: "",
+                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne mit der Power des Steckbretts.",
+                detail: "In diesem Schritt verbinden wir die Stromversorgung des Helligkeitssensors mit der des Steckbretts.",
                 inputs: ["s+", "PWR"],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie den Lichtsensor der Glühbirne mit Input 1 (blaues Kabel)",
-                detail: "",
+                msg: "Verbinden Sie mit dem blauen Kabel den Lichtsensor der Glühbirne mit Eingang 1.",
+                detail: "Das erlaubt uns, den Sensorwert im Controllino auszulesen.",
                 inputs: ["i1", "t"],
                 img: '/img/'
             },
             {
-                msg: "Switch aktivieren -> Ampel reagiert auf Helligkeit",
-                detail: "",
-                inputs: ["xx"],
-                img: '/img/'
-            },
-            {
-                msg: "text",
-                detail: "",
-                inputs: ["xx"],
-                img: '/img/'
-            },
-            {
-                msg: "text",
-                detail: "",
-                inputs: ["xx"],
-                img: '/img/'
-            },
-            {
-                msg: "text",
-                detail: "",
-                inputs: ["xx"],
-                img: '/img/'
-            },
-            {
-                msg: "text",
-                detail: "",
+                msg: "Dimmen Sie nun die Glühbirne.",
+                detail: "Bei hoher Helligkeit sollte die Ampel rot leuchten. Bei geringer Helligkeit grün.",
                 inputs: ["xx"],
                 img: '/img/'
             }
