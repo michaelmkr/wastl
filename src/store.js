@@ -21,55 +21,55 @@ export default new Vuex.Store({
                 msg: "Einführung",
                 detail: "Ich werde Ihnen jetzt alle Komponenten kurz erklären.",
                 inputs: [""],
-                img: '/img/'
+                img: "/img/arbeitsplatz.jpg"
             },
             {
                 msg: "Hinweis",
                 detail: "Bitte stellen Sie zu jedem Zeitpunkt sicher, dass die Ausrichtung der Komponenten mit den projizierten Kanten übereinstimmt.  ",
                 inputs: [""],
-                img: '/img/'
+                img: "/img/arbeitsplatz.jpg"
             },
             {
                 msg: "Rechts von Ihrem Arbeitsplatz befinden sich alle Kabel die Sie benötigen.",
                 detail: "",
                 inputs: [""],
-                img: '/img/kabel.jpg'
+                img: "/img/kabel.jpg"
             },
             {
                 msg: "Die Verbindung der Stromquelle befindet sich links auf dem Steckbrett.",
                 detail: "Die Kabel dazu liegen links vom Steckbrett.",
                 inputs: ["PWR", "GND"],
-                img: '/img/steckbrett.jpg'
+                img: '/img/steckbrett_details.jpg'
             },
             {
                 msg: "Jetzt habe ich Ihnen die Eingänge des Steckbretts hervorgehoben.",
                 detail: "",
                 inputs: ["i0", "i1", "i2", "i3", "i4", "i5", "i6", "i7"],
-                img: '/img/steckbrett.jpg'
+                img: '/img/steckbrett_details.jpg'
             },
             {
                 msg: "Jetzt habe ich Ihnen die Ausgänge des Steckbretts hervorgehoben.",
                 detail: "",
                 inputs: ["o0", "o1", "o2", "o3", "o4", "o5", "o6", "o7"],
-                img: '/img/steckbrett.jpg'
+                img: '/img/steckbrett_details.jpg'
             },
             {
                 msg: "Wenn die Ein- und Ausgänge aktiv sind, leuchten auch die jeweiligen Anzeigen auf dem Controllino.",
                 detail: "",
                 inputs: ["clD", "clA"],
-                img: '/img/steckbrett.jpg'
+                img: '/img/steckbrett_details.jpg'
             },
             {
                 msg: "Am Tec2Screen System sehen Sie die jeweiligen Ausgänge.",
                 detail: "Die Ausgangslinien Schalters und des Schiebereglers zeigen mit welchem Ausgang diese verbunden sind.",
                 inputs: ["t6", "t8"],
-                img: '/img/steckbrett.jpg'
+                img: '/img/tec2screen_details.jpg'
             },
             {
                 msg: "Die Glühbirne besitzt eine Stromversorgung (- und G+), sowie einen Helligkeitssensor (S+ und T).",
                 detail: "S+ ist hierbei die Stromversorgung des Sensors und T der Ausgang über den Sie den Wert auslesen können.",
                 inputs: ["g+", "g-", "s+", "st"],
-                img: '/img/gluhbirne.jpg'
+                img: '/img/gluhbirne_details.jpg'
             },
             {
                 msg: "Aufgabe 1: Testen der Komponenten",
