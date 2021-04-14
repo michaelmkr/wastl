@@ -214,13 +214,19 @@ export default new Vuex.Store({
             {
                 msg: "Verbinden Sie mit dem blauen Kabel den Lichtsensor der Glühbirne mit Eingang 1.",
                 detail: "Das erlaubt uns, den Sensorwert im Controllino auszulesen.",
-                inputs: ["i1", "t"],
+                inputs: ["i1", "st"],
                 img: '/img/'
             },
             {
-                msg: "Dimmen Sie nun die Glühbirne.",
+                msg: "Schalten Sie den Schalter im Tec2Screen System ein und dimmen Sie nun die Glühbirne.",
                 detail: "Bei hoher Helligkeit sollte die Ampel rot leuchten. Bei geringer Helligkeit grün.",
                 inputs: ["xx"],
+                img: '/img/'
+            },
+            {
+                msg: "Ende der Übungen: Gratulation!",
+                detail: "Sie haben die Einführungs-Übung absolviert! Bitte wenden Sie sich nun an Ihren Betreuer.",
+                inputs: ["", ""],
                 img: '/img/'
             }
         ]
