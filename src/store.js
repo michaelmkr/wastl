@@ -61,7 +61,7 @@ export default new Vuex.Store({
             },
             {
                 msg: "Die Glühbirne besitzt eine Stromversorgung (G+ und -), sowie einen Helligkeitssensor (S+ und T).",
-                detail: "Die Ausgangslinien des Schalters und des Schiebereglers zeigen Ihnen welcher Ausgang mit ihnen verbunden ist.",
+                detail: "S+ ist hierbei die Stromversorgung des Sensors und T der Ausgang über den Sie den Wert auslesen können.",
                 inputs: ["g+", "g-", "s+", "st"],
                 img: '/img/'
             },
@@ -109,12 +109,13 @@ export default new Vuex.Store({
             },
             {
                 msg: "Verbinden Sie das grüne Kabel der Ampel mit Plus.",
-                detail: "Nach dem Verbinden sollte das grüne Licht der Ampel leuchten. Ist dies der Fall, ziehen Sie das Kabel wieder ab.",
+                detail: "Nach dem Verbinden sollte das grüne Licht der Ampel leuchten." +
+                    "Ist dies der Fall, ziehen Sie das Kabel wieder ab. Ziehen Sie diesmal auch das schwarze Kabel der Ampel ab.",
                 inputs: ["PWR"],
                 img: '/img/'
             },
             {
-                msg: "Verbinden Sie mit dem gelben Kabel den Input 3 des UCB und den Output des Schalters Tec2Screen System.",
+                msg: "Verbinden Sie mit dem gelben Kabel den Input 3 des UCB und den Output des Schalters im Tec2Screen System.",
                 detail: "Beachten Sie, dass das Tec2Screen System Ihnen zeigt welcher Ausgang der richtige ist.",
                 inputs: ["i3", "t6"],
                 img: '/img/'
@@ -150,14 +151,15 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
-                msg: "Stecken Sie nun wieder alle Kabel ab.",
-                detail: "Danach geht es weiter mit der Übung.",
+                msg: "Stecken Sie nun wieder alle Kabel der Glühbirne ab.",
+                detail: "Stecken Sie die Kabel sowohl von der Glühbirne als auch vom Steckbrett ab und legen Sie diese zurück." +
+                    "Danach geht es weiter mit der nächsten Übung.",
                 inputs: ["", ""],
                 img: '/img/'
             },
             {
-                msg: "Übung 1: Dimmen der Glühbirne.",
-                detail: "",
+                msg: "Aufgabe 2: Dimmen der Glühbirne.",
+                detail: "In dieser Aufgabe lernen wir, wie wir die Glühbirne dimmen können.",
                 inputs: ["", ""],
                 img: '/img/'
             },
@@ -168,15 +170,21 @@ export default new Vuex.Store({
                 img: '/img/'
             },
             {
-                msg: "Ampel Masse abstecken, Glühbirn Masse verbinden, Ampel Masse wieder darauf stecken",
+                msg: "Verbinden Sie den nun die Masse der Glühbirne mit der Masse des Steckbretts.",
                 detail: "",
-                inputs: ["GND", "g-"],
+                inputs: ["g+", "o7"],
                 img: '/img/'
             },
             {
                 msg: "Schieberegler sollte nun Glühbirne dimmen können",
                 detail: "",
                 inputs: ["xx"],
+                img: '/img/'
+            },
+            {
+                msg: "Ampel Masse abstecken, Glühbirn Masse verbinden, Ampel Masse wieder darauf stecken",
+                detail: "",
+                inputs: ["GND", "g-"],
                 img: '/img/'
             },
             {
