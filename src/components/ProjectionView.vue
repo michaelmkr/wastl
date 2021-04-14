@@ -95,7 +95,6 @@
       <h1>{{ getSteps[getCurrentStep].msg }}</h1>
       <br><br>
       <h3>{{ getSteps[getCurrentStep].detail }}</h3>
-      <p>current step: {{ getCurrentStep }}</p>
     </div>
 
     <div id="tec2screen">
@@ -134,7 +133,7 @@
       <div
       class="tec2screenBlock"
           style="top:332px; right: 0px; width: 82px; height: 50px;"
-          v-bind:class="[getSteps[getCurrentStep].inputs.includes('tPWR') ? 'active' : '']"></div>
+          v-bind:class="[getSteps[getCurrentStep].inputs.includes('tGND') ? 'active' : '']"></div>
     </div>
 
     <div id="lightbulb">
