@@ -39,9 +39,9 @@
         <div id="o4" class="input row1 col4"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('o4') ? 'active' : '']"/>
         <div id="d0" class="input row1 col5"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d0') ? 'active' : '']"/>
         <div id="d4" class="input row1 col6"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d4') ? 'active' : '']"/>
 
         <div id="i1" class="input row2 col1"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('i1') ? 'active' : '']"/>
@@ -52,9 +52,9 @@
         <div id="o5" class="input row2 col4"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('o5') ? 'active' : '']"/>
         <div id="d1" class="input row2 col5"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d1') ? 'active' : '']"/>
         <div id="d5" class="input row2 col6"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d5') ? 'active' : '']"/>
 
         <div id="i2" class="input row3 col1"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('i2') ? 'active' : '']"/>
@@ -65,9 +65,9 @@
         <div id="o6" class="input row3 col4"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('o6') ? 'active' : '']"/>
         <div id="d2" class="input row3 col5"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d2') ? 'active' : '']"/>
         <div id="d6" class="input row3 col6"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d6') ? 'active' : '']"/>
 
         <div id="i3" class="input row4 col1"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('i3') ? 'active' : '']"/>
@@ -78,9 +78,9 @@
         <div id="o7" class="input row4 col4"
              v-bind:class="[getSteps[getCurrentStep].inputs.includes('o7') ? 'active' : '']"/>
         <div id="d3" class="input row4 col5"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d3') ? 'active' : '']"/>
         <div id="d7" class="input row4 col6"
-             v-bind:class="[getSteps[getCurrentStep].inputs.includes('') ? 'active' : '']"/>
+             v-bind:class="[getSteps[getCurrentStep].inputs.includes('d7') ? 'active' : '']"/>
 
       </div>
 
