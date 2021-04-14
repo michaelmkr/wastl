@@ -5,7 +5,7 @@
       <!--      <p>Current step: <br>{{ getCurrentStep }}</p>-->
       <div style="margin: auto; position: absolute; top: 100px;"><h1>{{ getSteps[getCurrentStep].msg }}</h1></div>
       <div style="margin: auto; position: absolute; top: 300px;"><h3>{{ getSteps[getCurrentStep].detail }}</h3></div>
-      <div style="position: absolute; top: 400px; max-height: 400px; margin:auto;"><img :src="getSteps[getCurrentStep].img" style="max-height: 500px!important"></div>
+      <div style="position: absolute; top: 400px; max-height: 400px; margin:auto;"><img :src="getSteps[getCurrentStep].img" style="max-height: 500px!important" v-if='getSteps[getCurrentStep].img !== "null"'></div>
       <!--      <p>Current inputs: <br>{{ getSteps[getCurrentStep].inputs }}</p>-->
     </div>
     <button class="mdc-button mdc-button--raised button" style="left: 10px;" @click="lastStep">zurück</button>
