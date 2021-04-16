@@ -90,6 +90,10 @@
 
     </div>
 
+    <div
+        class="powerCables"
+        v-bind:class="[getSteps[getCurrentStep].inputs.includes('src') ? 'active' : '']"></div>
+
     <div id="worktopText">
       <br><br><br><br><br><br>
       <h1>{{ getSteps[getCurrentStep].msg }}</h1>
@@ -99,39 +103,39 @@
 
     <div id="tec2screen">
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top: 0px; left: 0px; width: 70px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t1') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top: 0px; right: 12px; width: 70px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t2') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top: 70px; left: 0px; width: 70px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t3') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top:70px; right: 8px; width: 74px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t4') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top: 140px; left: 0px; width: 70px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t5') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top:145px; right: 4px; width: 78px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t6') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top: 210px; left: 0px; width: 70px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t7') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top:220px; right: 0px; width: 82px; height: 66px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('t8') ? 'active' : '']"></div>
       <div
-      class="tec2screenBlock"
+          class="tec2screenBlock"
           style="top:332px; right: 0px; width: 82px; height: 50px;"
           v-bind:class="[getSteps[getCurrentStep].inputs.includes('tGND') ? 'active' : '']"></div>
     </div>
@@ -230,22 +234,19 @@ export default {
 #onBoardText {
   height: 160px;
   width: 116px;
-//background-color: black; color: white; position: absolute; left: 271px;
-  top: 253px;
+//background-color: black; color: white; position: absolute; left: 271px; top: 253px;
 }
 
 #worktopText {
   height: 480px;
   width: 320px;
-//background-color: red; color: white; position: absolute; left: 0px;
-  top: 200px;
+//background-color: red; color: white; position: absolute; left: 0px; top: 200px;
 }
 
 #tec2screen {
   height: 480px;
   width: 380px;
-//background-color: red; color: white; position: absolute; left: 850px;
-  top: 0px;
+//background-color: red; color: white; position: absolute; left: 850px; top: 0px;
 }
 
 #lightbulb {
@@ -305,6 +306,14 @@ export default {
   position: absolute;
   border: 1px solid white;
 //background-color: white
+}
+
+.powerCables {
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  width: 82px;
+  height: 50px;
 }
 
 

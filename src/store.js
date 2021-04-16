@@ -30,7 +30,7 @@ export default new Vuex.Store({
                 img: "/img/arbeitsplatz.jpg"
             },
             {
-                msg: "Rechts von Ihrem Arbeitsplatz befinden sich alle Kabel die Sie benötigen.",
+                msg: "Rechts von Ihrem Arbeitsplatz befinden sich alle zusätzlichen Kabel die Sie benötigen.",
                 detail: "",
                 inputs: [""],
                 img: "/img/kabel.jpg"
@@ -38,7 +38,7 @@ export default new Vuex.Store({
             {
                 msg: "Die Verbindung der Stromquelle befindet sich links auf dem Steckbrett.",
                 detail: "Die Kabel dazu liegen links vom Steckbrett.",
-                inputs: ["PWR", "GND"],
+                inputs: ["PWR", "GND", "src"],
                 img: "/img/steckbrett_details.jpg"
             },
             {
@@ -80,13 +80,13 @@ export default new Vuex.Store({
             {
                 msg: "Verbinden Sie das rote Kabel der Stromversorgung mit dem 24V Anschluss des Steckbretts.",
                 detail: "Die Stromzufuhr für das Steckbrett kommt vom Tec2Screen System.",
-                inputs: ["PWR"],
+                inputs: ["PWR", "src"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie das schwarze Kabel der Stromversorgung mit der Masse des Steckbretts.",
+                msg: "Verbinden Sie das schwarze Kabel der Stromversorgung mit der Masse (0V) des Steckbretts.",
                 detail: "Die Stromzufuhr für das Steckbrett kommt vom Tec2Screen System.",
-                inputs: ["GND"],
+                inputs: ["GND", "src"],
                 img: "null"
             },
             {
@@ -150,7 +150,7 @@ export default new Vuex.Store({
                 img: ""
             },
             {
-                msg: "Verbinden Sie nun die Masse der Glühbirne mit der Masse des Steckbretts.",
+                msg: "Verbinden Sie nun die Masse der Glühbirne (-) mit der Masse des Steckbretts (0V).",
                 detail: "Die Glühbirne sollte nun leuchten.",
                 inputs: ["g-", "GND"],
                 img: ""
@@ -175,10 +175,10 @@ export default new Vuex.Store({
                 img: "/img/gluhbirne_details.jpg"
             },
             {
-                msg: "Verbinden Sie den nun die Masse der Glühbirne mit der Masse des Steckbretts.",
+                msg: "Verbinden Sie den nun die Masse der Glühbirne (-) mit der Masse (0V) des Steckbretts.",
                 detail: "",
                 inputs: ["g-", "GND"],
-                img: "/img/gluhbirne_details.jpg"
+                img: "/img/tec2screen_details.jpg"
             },
             {
                 msg: "Der Schieberegler sollte die Glühbirne nun dimmen können",
@@ -211,13 +211,13 @@ export default new Vuex.Store({
                 img: "null"
             },
             {
-                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne mit der Stromversorgung des Steckbretts.",
+                msg: "Verbinden Sie mit einem roten Kabel den Helligkeitssensor der Glühbirne (S+) mit der Stromversorgung des Steckbretts (+24V).",
                 detail: "In diesem Schritt verbinden wir die Stromversorgung des Helligkeitssensors mit der des Steckbretts.",
                 inputs: ["s+", "PWR"],
                 img: "null"
             },
             {
-                msg: "Verbinden Sie mit dem blauen Kabel den Lichtsensor der Glühbirne mit Eingang 1.",
+                msg: "Verbinden Sie mit dem blauen Kabel den Lichtsensor der Glühbirne (T) mit Eingang 1.",
                 detail: "Das erlaubt uns, den Sensorwert im Controllino auszulesen.",
                 inputs: ["i1", "st"],
                 img: "null"
