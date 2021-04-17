@@ -145,12 +145,12 @@ export default new Vuex.Store({
             },
             {
                 msg: "Verbinden Sie nun G+ der Glühbirne mit dem 24V Anschluss des Steckbretts.",
-                detail: "",
+                detail: "Verwenden Sie dazu ein rotes Kabel.",
                 inputs: ["g+", "PWR"],
                 img: ""
             },
             {
-                msg: "Verbinden Sie nun die Masse der Glühbirne (-) mit der Masse des Steckbretts (0V).",
+                msg: "Verbinden Sie nun die Masse der Glühbirne (-) mit der Masse des Steckbretts (0V) mit einem schwarzen Kabel.",
                 detail: "Die Glühbirne sollte nun leuchten.",
                 inputs: ["g-", "GND"],
                 img: ""
